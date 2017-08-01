@@ -3,13 +3,28 @@
 <head>
   <title>Welcome to Vue</title>
   <script src="https://unpkg.com/vue"></script>
+    <style>
+    #logo
+        {
+            display: block;
+            margin: 0 auto;
+        }
+    #blue
+        {
+            background-color: #35495E;
+            padding:10px;
+        }
+  
+    </style>
 </head>
 <body>
   <div id="app">
-    <img src="https://vuejs.org/images/logo.png" alt="Vue logo">
-    <h1>\{{ greeting }}</h1>
-    <ul>
-      <li>
+    <img id="logo"src="https://vuejs.org/images/logo.png" alt="Vue logo">
+   <br>
+       <div id="blue"><h1 style="color: white; text-align: center;">\{{ greeting }}</h1>
+           <br>
+    <ul style="color: lightgrey;">
+      <li >
         To learn more about Vue, visit
         <a :href="docsURL" target="_blank">
           \{{ humanizeURL(docsURL) }}
@@ -27,7 +42,7 @@
           the forum
         </a>
       </li>
-    </ul>
+           </ul> </div>
   </div>
 
   <script>
